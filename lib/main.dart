@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:instaclone/state/auth/backend/authenticator.dart';
 import 'firebase_options.dart';
+import 'dart:developer' as devtools show log;
 
-// provider scope
+// Logging implementation
+extension Log on Object {
+  void log() => devtools.log(toString());
+}
+
+// Provider scope
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -48,9 +55,26 @@ class MyHomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Instaclone'),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Instaclone'),
+        ),
+        body: Column(
+          children: [
+            TextButton(
+              onPressed: () async {
+                final result = await Authenticator().loginWithGoogle();
+                result.log();
+              },
+              child: const Text('Sign In With Google'),
+            ),
+            TextButton(
+              onPressed: () async {
+                final result = await Authenticator().loginWithFacebook();
+                result.log();
+              },
+              child: const Text('Sign In With Facebook'),
+            ),
+          ],
+        ));
   }
 }
