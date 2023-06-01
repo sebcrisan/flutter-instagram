@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "130515049776",
-    "project_id": "instaclone-gaiseric",
-    "storage_bucket": "instaclone-gaiseric.appspot.com"
+    "project_number": "5670830973",
+    "project_id": "instagram-clone-gaiseric",
+    "storage_bucket": "instagram-clone-gaiseric.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:130515049776:android:1e2d4813bd9bfa5a9d3cf5",
+        "mobilesdk_app_id": "1:5670830973:android:43755e9ccaa680f60c4214",
         "android_client_info": {
           "package_name": "com.example.instaclone"
         }
       },
       "oauth_client": [
         {
-          "client_id": "130515049776-om7b0ucpjdc9t66gpg7r4aumbgfib9ft.apps.googleusercontent.com",
+          "client_id": "5670830973-see4tk2968jpheeoc2a36k4n4uh3mrvp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAZwvf7NvGQWPHw3nj0n3qPrPwOI3HmPgQ"
+          "current_key": "AIzaSyBG0ym0ay-qSFc7qKpQ8SHuzNYJ8308rDI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "130515049776-om7b0ucpjdc9t66gpg7r4aumbgfib9ft.apps.googleusercontent.com",
+              "client_id": "5670830973-see4tk2968jpheeoc2a36k4n4uh3mrvp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

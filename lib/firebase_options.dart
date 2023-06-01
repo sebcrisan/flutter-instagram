@@ -25,10 +25,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -47,29 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBNJdXITZmojls-K2hvXLKb7JuF8UDiyP0',
-    appId: '1:130515049776:web:f2212af6fa5920b29d3cf5',
-    messagingSenderId: '130515049776',
-    projectId: 'instaclone-gaiseric',
-    authDomain: 'instaclone-gaiseric.firebaseapp.com',
-    storageBucket: 'instaclone-gaiseric.appspot.com',
+    apiKey: 'AIzaSyA6wIDRPDDSU0vv9azcOFwCP-vFXt69rJY',
+    appId: '1:5670830973:web:cf1b820de38fc1c20c4214',
+    messagingSenderId: '5670830973',
+    projectId: 'instagram-clone-gaiseric',
+    authDomain: 'instagram-clone-gaiseric.firebaseapp.com',
+    storageBucket: 'instagram-clone-gaiseric.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAZwvf7NvGQWPHw3nj0n3qPrPwOI3HmPgQ',
-    appId: '1:130515049776:android:1e2d4813bd9bfa5a9d3cf5',
-    messagingSenderId: '130515049776',
-    projectId: 'instaclone-gaiseric',
-    storageBucket: 'instaclone-gaiseric.appspot.com',
+    apiKey: 'AIzaSyBG0ym0ay-qSFc7qKpQ8SHuzNYJ8308rDI',
+    appId: '1:5670830973:android:43755e9ccaa680f60c4214',
+    messagingSenderId: '5670830973',
+    projectId: 'instagram-clone-gaiseric',
+    storageBucket: 'instagram-clone-gaiseric.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAZfa8oOMu5qGG-eRyN4k3ahG0h28bWtig',
-    appId: '1:130515049776:ios:193fa49dbd965d829d3cf5',
-    messagingSenderId: '130515049776',
-    projectId: 'instaclone-gaiseric',
-    storageBucket: 'instaclone-gaiseric.appspot.com',
-    iosClientId: '130515049776-fl4nslb7cv0sorv806bta7admkr5n0om.apps.googleusercontent.com',
+    apiKey: 'AIzaSyDmv6kiOm3Ua0tsNpfzbiVM5CPsMO65rII',
+    appId: '1:5670830973:ios:06944fbb699ddcc80c4214',
+    messagingSenderId: '5670830973',
+    projectId: 'instagram-clone-gaiseric',
+    storageBucket: 'instagram-clone-gaiseric.appspot.com',
+    iosClientId: '5670830973-q9ff0qtfa04acvh1m2tuoha8eqgkh7po.apps.googleusercontent.com',
+    iosBundleId: 'com.example.instaclone',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDmv6kiOm3Ua0tsNpfzbiVM5CPsMO65rII',
+    appId: '1:5670830973:ios:06944fbb699ddcc80c4214',
+    messagingSenderId: '5670830973',
+    projectId: 'instagram-clone-gaiseric',
+    storageBucket: 'instagram-clone-gaiseric.appspot.com',
+    iosClientId: '5670830973-q9ff0qtfa04acvh1m2tuoha8eqgkh7po.apps.googleusercontent.com',
     iosBundleId: 'com.example.instaclone',
   );
 }
